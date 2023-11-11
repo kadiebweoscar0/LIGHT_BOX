@@ -1,13 +1,14 @@
 const imageElements = document.querySelectorAll('img[src=".png"], [src=".jpeg"], [src=".jpg"]');
 const body = document.querySelector('body');
 
-imageElements.forEach((imageElement)=>{
+imageElements.forEach(imageElement =>
     imageElement.addEventListener('click', (e)=>{
         e.preventDefault()
         const srcOfImage = getSrcOfImage(imageElement);
         setSrcOnImgLightBox(srcOfImage)
     })
-})
+)
+
 
 
 function getSrcOfImage(element) {

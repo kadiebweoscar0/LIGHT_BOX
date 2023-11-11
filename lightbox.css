@@ -1,4 +1,7 @@
 .lightbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,6 +62,7 @@
 }
 
 .lightbox__container{
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
